@@ -1,11 +1,11 @@
 version: "3.1"
 services:
-  trilock:
-    container_name: trilock-api
-    image: trilock
+  app:
+    container_name: trackerms-api
+    image: spring-boot-postgresql
     build: ./
     ports:
-      - "8085:8085"
+      - "8080:8080"
     depends_on:
       - trilockdb
   trilockdb:

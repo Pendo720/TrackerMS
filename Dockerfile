@@ -1,4 +1,3 @@
-FROM openjdk:14
-ADD target/trilock-service.jar trilock-service.jar
-EXPOSE 8085
-ENTRYPOINT ["java", "-jar", "trilock-service.jar"]
+FROM adoptopenjdk/openjdk11:alpine-jre
+ADD target/trackerms-service.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]

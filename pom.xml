@@ -8,14 +8,14 @@
         <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tracker</groupId>
+    <groupId>com.trackerms</groupId>
     <artifactId>service</artifactId>
     <version>1.0</version>
     <name>service</name>
     <description>Tracker backend service</description>
 
     <properties>
-        <java.version>14</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
@@ -117,7 +117,7 @@
                 <version>2.19.1</version>
             </plugin>
         </plugins>
-        <finalName>tracker-service</finalName>
+        <finalName>trackerms-service</finalName>
     </build>
 
 </project>
