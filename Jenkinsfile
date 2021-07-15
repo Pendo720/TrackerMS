@@ -9,7 +9,6 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Building...'
-                sh 'mvn -B -DskipTests clean package' 
             }
         }
         stage('Install') { 
@@ -17,7 +16,7 @@ pipeline {
                 echo 'Installing...'
             }
         }            
-        stage('Deploymeny') { 
+        stage('Deployment') { 
             steps {
                 echo 'Deploying...'
             }
