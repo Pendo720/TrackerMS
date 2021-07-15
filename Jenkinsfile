@@ -3,23 +3,23 @@ pipeline {
     stages {
         stage('clean'){
             steps {
-                sh echo Cleaning ...
+                echo 'Cleaning...'
             }
         }
         stage('Build') { 
             steps {
-                sh echo Building ...
+                echo 'Building...'
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
         stage('Install') { 
             steps {
-                sh echo Installing ...
+                echo 'Installing...'
             }
         }            
         stage('Deploymeny') { 
             steps {
-                sh echo Deploying ...
+                echo 'Deploying...'
             }
         }            
     }
