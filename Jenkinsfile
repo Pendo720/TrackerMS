@@ -5,13 +5,17 @@ pipeline {
             steps {
                 echo 'Cleaning...'
                 git url: 'https://github.com/Pendo720/TrackerMS'
-                 sh 'mvn clean'
+                    withMaven{
+                        sh 'mvn clean'
+                    }
             }
         }
         stage('Build') { 
             steps {
                 echo 'Building...'
-                sh 'mvn build'
+                    withMaven {
+                        sh 'mvn build'
+                    }
             }
         }
         stage('Install') { 
